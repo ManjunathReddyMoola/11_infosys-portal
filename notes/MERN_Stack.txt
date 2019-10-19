@@ -1,0 +1,78 @@
+MERN Application (Full stack)
+-----------------------------
+Employee Portal Website
+
+Client : React JS + Bootstrap
+Server : Express , Node JS
+Database : Mongo DB
+
+CREATE , READ , UPDATE , DELETE
+
+API for Server Side
+--------------------
+READ All Employees :
+-------------------
+path: /api/employees/
+HTTP Method : GET
+Express : app.get()
+Mongo DB : db.find()
+
+READ Single Employee :
+-------------------
+path: /api/employees/:id
+HTTP Method : GET
+Express : app.get()
+Mongo DB : db.find({id : empId})
+
+CREATE Employee
+----------------
+path : /api/employees/
+HTTP Method : POST
+Express : app.post()
+Mongo DB : db.insertOne()
+
+UPATE Employee
+---------------
+path : /api/employees/:id
+HTTP Method : PUT
+Express : app.put()
+Mongo DB: db.findOneAndUpdate({id : empId})
+
+
+DELETE Employee
+----------------
+path : /api/employees/:id
+HTTP Method : DELETE
+Express : app.delete()
+Mongo DB : db.deleteOne({id : empId})
+
+Database Setup
+----------------
+Database : infoys-portal
+Table : employees
+
+use infoys-portal;
+
+db.createCollection('employees');
+
+db.employees.insertMany([{"id":1,"first_name":"Dita","last_name":"Suthren","email":"dsuthren0@godaddy.com","gender":"Female","ip_address":"221.4.206.99"},
+{"id":2,"first_name":"Yank","last_name":"Bruyns","email":"ybruyns1@sbwire.com","gender":"Male","ip_address":"171.191.193.38"},
+{"id":3,"first_name":"Daune","last_name":"Loachhead","email":"dloachhead2@edublogs.org","gender":"Female","ip_address":"82.114.245.229"},
+{"id":4,"first_name":"Ulberto","last_name":"Baroche","email":"ubaroche3@vkontakte.ru","gender":"Male","ip_address":"176.49.247.10"},
+{"id":5,"first_name":"Mahalia","last_name":"Skudder","email":"mskudder4@shinystat.com","gender":"Female","ip_address":"166.61.211.95"}]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

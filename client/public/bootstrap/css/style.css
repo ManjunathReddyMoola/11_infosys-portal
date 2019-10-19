@@ -1,0 +1,15 @@
+.bg-danger , .btn-danger{
+    background: linear-gradient(45deg,black,red) !important;
+}
+.bg-dark , .btn-dark{
+    background: linear-gradient(45deg,darkslategray,darkslategray);
+}
+.bg-primary , .btn-primary{
+    background: linear-gradient(45deg,darkslategray,skyblue);
+}
+.table tbody tr td{
+    font-weight: bold;
+}
+.btn{
+    border-radius: 50px !important;
+}
